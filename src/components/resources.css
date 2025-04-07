@@ -1,0 +1,34 @@
+.resources-section {
+    padding: 2rem 0;
+  }
+  
+  .resources-title {
+    color: #f67c0a;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .MuiAccordionSummary-content {
+    font-weight: 500 !important;
+  }
+  
+  a {
+    color: #f37806;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  img {
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .resources-section {
+      padding: 1rem;
+    }
+  }

@@ -1,0 +1,89 @@
+/* This is the CSS file for the course moda and the css goes from here and exported in the coursemoda.jsx */
+.course-modal-container {
+    display: inline-block;
+  }
+  
+  /* Button Styling */
+  .course-modal-button {
+    color: #f2720a !important;
+    font-weight: 500 !important;
+    padding: 4px 8px !important;
+    min-width: auto !important;
+    text-transform: none !important;
+  }
+  
+  .course-modal-button:hover {
+    background-color: rgba(242, 114, 10, 0.1) !important;
+  }
+  
+  /* Modal Content */
+  .course-modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    max-height: 80vh;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    outline: none;
+  }
+  
+  /* Title Styling */
+  .course-modal-title {
+    font-size: 1.5rem !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+    margin-bottom: 0.5rem !important;
+  }
+  
+  /* Subject Styling */
+  .course-modal-subject {
+    font-size: 1.1rem !important;
+    color: #666 !important;
+    margin-bottom: 1rem !important;
+    font-style: italic;
+  }
+  
+  .course-modal-id {
+    font-size: 0.9rem !important;
+    color: #f2720a !important;
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Description Styling */
+  .course-modal-description {
+    font-size: 1rem !important;
+    color: #444 !important;
+    line-height: 1.6 !important;
+    white-space: pre-line;
+  }
+  
+  /* Loading State */
+  .course-modal-loading {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .course-modal-content {
+      width: 90%;
+      padding: 1.5rem;
+    }
+    
+    .course-modal-title {
+      font-size: 1.3rem !important;
+    }
+    
+    .course-modal-subject {
+      font-size: 1rem !important;
+    }
+  }

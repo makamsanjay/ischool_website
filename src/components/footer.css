@@ -1,0 +1,124 @@
+.footer {
+  background-color: #ffffff;
+  padding: 20px 10px;
+  color: #333333;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  border-top: 4px solid #ff6f00;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Footer section */
+.footer section {
+  margin-bottom: 15px;
+}
+
+/* Section titles */
+.footer h3 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ff6f00;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+/* Social links */
+.social-section a {
+  color: #333333;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.social-section a:hover {
+  color: #ff6f00;
+}
+
+/* Quick links */
+.quickLinks-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quickLinks-section ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.quickLinks-section ul li {
+  margin: 0;
+}
+
+.quickLinks-section a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.quickLinks-section a:hover {
+  color: #ff6f00;
+}
+
+/* Copyright */
+.copyright-section {
+  font-size: 0.8rem;
+  color: #777777;
+}
+
+.copyright-section a {
+  color: #777777;
+  text-decoration: none;
+}
+
+copyright-section a:hover {
+  color: #333333;
+}
+
+/* News link */
+.news-section a {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.news-section a:hover {
+  color: #ff6f00;
+}
+
+/* Responsive Media quries */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .footer h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer a {
+    font-size: 0.8rem;
+  }
+
+  .quickLinks-section ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .quickLinks-section a:not(:last-child)::after {
+    content: none;
+  }
+}

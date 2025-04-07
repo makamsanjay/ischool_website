@@ -1,0 +1,20 @@
+.research-section {
+    padding: 2rem 0;
+  }
+  
+  .research-title {
+    color: #f88a0c;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .MuiAccordionSummary-content {
+    font-weight: 500 !important;
+  }
+  
+  @media (max-width: 768px) {
+    .research-section {
+      padding: 1rem;
+    }
+  }

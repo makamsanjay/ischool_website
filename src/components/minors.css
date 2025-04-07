@@ -1,0 +1,112 @@
+/* Minors Section */
+.minors-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Title Styling */
+.minors-section .minors-title {
+  color: #f2720a !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem !important;
+  position: relative;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.minors-section .minors-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #f2720a;
+}
+
+/* Accordion Styling */
+.minors-section .MuiAccordion-root {
+  margin-bottom: 16px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid #e0e0e0 !important;
+  transition: all 0.3s ease !important;
+}
+
+.minors-section .MuiAccordion-root:hover {
+  border-color: #f2720a !important;
+  box-shadow: 0 3px 10px rgba(242, 114, 10, 0.15) !important;
+}
+
+.minors-section .MuiAccordionSummary-root {
+  background-color: #fafafa !important;
+  border-radius: 8px 8px 0 0 !important;
+}
+
+.minors-section .MuiAccordionSummary-content {
+  margin: 12px 0 !important;
+}
+
+.minors-section .minor-header {
+  font-weight: 600 !important;
+  color: #333 !important;
+  font-size: 1.1rem !important;
+}
+
+/* Content Styling */
+.minors-section .MuiAccordionDetails-root {
+  padding: 16px 24px !important;
+  background-color: #fff;
+}
+
+/* Course List Styling */
+.minors-section .course-list {
+  padding-left: 1.5rem !important;
+  margin: 0.8rem 0 !important;
+}
+
+.minors-section .course-list li {
+  margin-bottom: 0.6rem !important;
+  line-height: 1.6 !important;
+  color: #444 !important;
+  position: relative !important;
+  list-style-type: none !important;
+}
+
+.minors-section .course-list li::before {
+  content: '—';
+  color: #f2720a;
+  position: absolute;
+  left: -1.2rem;
+}
+
+/* Note Styling */
+.minors-section .minor-note {
+  margin-top: 12px !important;
+  padding-top: 12px !important;
+  border-top: 1px solid #eee !important;
+  font-size: 0.9rem !important;
+  color: #666 !important;
+  font-style: italic !important;
+}
+
+/* Responsive Media quries */
+@media (max-width: 768px) {
+  .minors-section {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  
+  .minors-section .MuiAccordion-root {
+    margin-bottom: 12px !important;
+  }
+  
+  .minors-section .MuiAccordionDetails-root {
+    padding: 12px 16px !important;
+  }
+}

@@ -1,0 +1,115 @@
+/* This is the css styling for the degress section which goes to the degressaccordion.jsx, !importnat is used in all the files becuase i have used
+accrordion many times in the project so it will overwrite if any css is not applying or overwriting.*/
+.degrees-section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Title Styling */
+.degrees-section .MuiTypography-h4 {
+  color: #f2720a !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem !important;
+  position: relative;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.degrees-section .MuiTypography-h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #f2720a;
+}
+
+/* Accordion Styling */
+.degrees-section .MuiAccordion-root {
+  background-color: #fff !important;
+  border: 1px solid #e0e0e0 !important;
+  border-radius: 6px !important;
+  margin-bottom: 0.8rem !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
+}
+
+.degrees-section .MuiAccordion-root:hover {
+  border-color: #f2720a !important;
+  box-shadow: 0 3px 8px rgba(242, 114, 10, 0.1) !important;
+}
+
+.degrees-section .MuiAccordionSummary-root {
+  padding: 0 1.5rem !important;
+}
+
+.degrees-section .MuiAccordionSummary-content {
+  margin: 1.2rem 0 !important;
+}
+
+.degrees-section .MuiAccordionDetails-root {
+  padding: 0 1.5rem 1.5rem !important;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Program Styling */
+.degrees-section .degree-program {
+  margin-bottom: 1.8rem;
+}
+
+.degrees-section .degree-program h4 {
+  color: #f2720a;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.degrees-section .degree-details {
+  padding-left: 1rem;
+  border-left: 2px solid #f2720a;
+}
+
+/* List Styling */
+.degrees-section ul {
+  padding-left: 1.5rem !important;
+  margin: 0.8rem 0 !important;
+}
+
+.degrees-section li {
+  margin-bottom: 0.6rem !important;
+  line-height: 1.6 !important;
+  color: #444 !important;
+  position: relative !important;
+  list-style-type: none !important;
+}
+
+.degrees-section li::before {
+  content: '—';
+  color: #f2720a;
+  position: absolute;
+  left: -1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .degrees-section {
+    padding: 1.5rem;
+    margin: 1rem auto;
+  }
+  
+  .degrees-section .MuiAccordionSummary-root {
+    padding: 0 1rem !important;
+  }
+  
+  .degrees-section .MuiAccordionDetails-root {
+    padding: 0 1rem 1rem !important;
+  }
+}
